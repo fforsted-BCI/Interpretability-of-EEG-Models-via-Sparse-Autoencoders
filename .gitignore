@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+data/
+runs/
+examples/data/
+*.pt
+*.pth
+*.joblib
+.env
