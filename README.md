@@ -1,4 +1,4 @@
-# CIACNet–SAE: Integrated paper reproduction repository
+# Interpretability-of-EEG-Models-via-Sparse-Autoencoders
 
 **Purpose:**  Session-T-only SAE discovery and frozen Session-E evaluation on pre-exported 96-D CIACNet embeddings; automatically export all *available* outputs and a strict coverage audit against the October 7, 2026 paper.
 
