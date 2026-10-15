@@ -1,6 +1,6 @@
 # CIACNet–SAE: Integrated paper reproduction repository
 
-**Purpose:**  Session-T-only SAE discovery and frozen Session-E evaluation on pre-exported 96-D CIACNet embeddings; automatically export all *available* outputs and a strict coverage audit against the October 7, 2026 paper (14 tables, 10 figures).
+**Purpose:**  Session-T-only SAE discovery and frozen Session-E evaluation on pre-exported 96-D CIACNet embeddings; automatically export all *available* outputs and a strict coverage audit against the October 7, 2026 paper.
 
 ## What is integrated
 
@@ -10,8 +10,7 @@
 - `legacy_sources/BCI2A_Frozen_SessionE_Feature_Replication.py` — original four-feature 2a replication; requires original frozen release and expected notebook state.
 - `legacy_sources/BCI2B_Final8_Frozen_SessionE_Replication.py` — original eight-feature 2b replication; requires Block 6–8 state.
 - `legacy_sources/old_release_b6_functional_exact_recovery_v5.py` — audited frozen original 2a restoration; requires archived release/checkpoints.
-- `legacy_sources/RUN_ALL_BLOCKS_1_TO_10.py` — historical executor **requires ten separate original Block scripts not retrieved**. Included for provenance, not invoked by new runner.
-- `paper/inventory.json` — paper output coverage and required inputs.
+- `legacy_sources/RUN_ALL_BLOCKS_1_TO_10.py` — historical executor **requires ten separate original Block scripts not retrieved**. 
 - `scripts/run_all.py` — single executable entry point; stops on failure.
 
 ## REAL DATA: one command for BCI-IV-2a and BCI-IV-2b (recommended)
@@ -33,12 +32,11 @@ MOABB may download gigabytes; internet and dataset host availability are needed.
 a full nine-subject paper analysis. Dataset paths are local and never committed.
 
 **Scientific status:** the download and session split use real EEG. The included
-standalone fallback encoder uses log-bandpower + T-fitted PCA rather than
+standalone fallback encoder uses log-bandpower + T-fitted
 CIACNet: its feature IDs, classification, inference and figures are NOT the
 published CIACNet/SAE results. Exact paper reproduction still requires the
-original CIACNet (including FBCSP front-end), fitted SAE with AuxK and balance,
-and checkpoint/release artifacts. Do not identify newly fitted SAE F0003 etc.
-as the publication's F0003 etc.
+original CIACNet fitted SAE with AuxK and balance,
+and checkpoint/release artifacts. 
 
 ## Run (Windows, Linux, macOS)
 
